@@ -1,8 +1,5 @@
 #!/usr/bin/env zsh
 
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
-
 # Set optimal PATH with local
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Set optimal MANPATH with local
