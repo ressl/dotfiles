@@ -1,10 +1,9 @@
-" NERDTree mappings {{{
-map <C-n> :NERDTreeToggle<CR>
-" }}}
-
 " NERDTree {{{
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree
 " }}}
 
 " Spaces & Tabs {{{
@@ -17,6 +16,7 @@ set copyindent      " copy indent from the previous line
 " }}} Spaces & Tabs
 
 call plug#begin('~/.config/nvim/plugged')
+Plug 'tpope/vim-fugitive'
 Plug 'sbdchd/vim-run'
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
@@ -40,6 +40,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 " Using a non-master branch
@@ -49,10 +50,13 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'fatih/vim-go', { 'tag': '*' }
 
 " Plugin options
-Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+Plug 'nsf/gocode', { 'tag': '*', 'rtp': 'vim' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" the framework
+Plug 'roxma/nvim-completion-manager'
 
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
