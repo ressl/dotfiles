@@ -3,6 +3,7 @@ sensible hacker defaults for macOS
 
 ## Thanks to…
 
+* [laurenkt](https://github.com/laurenkt/) and her [zsh-vimto](https://github.com/laurenkt/zsh-vimto)
 * [Mathias Bynens](https://github.com/mathiasbynens/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
 * @ptb and [his _macOS Setup_ repository](https://github.com/ptb/mac-setup)
 * [Ben Alman](http://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
