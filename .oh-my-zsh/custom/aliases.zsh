@@ -53,7 +53,7 @@ alias sudo='sudo '
 alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cask upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+alias update='sudo softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
@@ -153,3 +153,9 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+#
+# git config for safematix
+alias gitis='git config user.email "r.ressl@safematix.com"; git config user.signingkey F8420DA891DFA190F07A4B6EEC97FD8CE286CD8C'
+
+# git config for avectris
+alias gitia='git config user.email "robert.ressl@avectris.ch"; git config user.signingkey 101D2615211421D8D22218DFD68251B5B79A051A'
