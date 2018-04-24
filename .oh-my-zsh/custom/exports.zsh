@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Set optimal PATH with local
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 # Set optimal MANPATH with local
 export MANPATH="/usr/local/man:$MANPATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
