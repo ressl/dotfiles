@@ -4,7 +4,7 @@ Sensible hacker defaults dotfiles for macOS.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Copy the dotfiles into your home.
 
 ### Prerequisites
 
@@ -37,7 +37,7 @@ cp -av ./.* ~/
 
 ## Built With
 
-* [chef](https://www.chef.io) - Chef Software, Inc
+* [neovim](https://neovim.io) - neovim
 
 ## Contributing
 
