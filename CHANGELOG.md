@@ -2,7 +2,11 @@
 
 This file is used to list changes made in each version of the dotfile project.
 
-## v1.0.0
+## v1.0.1 (24.04.2018)
+
+- fix some informations in readme
+
+## v1.0.0 (24.04.2018)
 
 - add /usr/local/sbin to path
 - add brew cask cleanup
