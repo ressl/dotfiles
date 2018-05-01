@@ -1,0 +1,8 @@
+[user]
+	name = Ressl Robert
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+[tag]
+	gpgsign = true
